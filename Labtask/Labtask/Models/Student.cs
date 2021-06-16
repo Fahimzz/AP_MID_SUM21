@@ -23,5 +23,8 @@ namespace Labtask.Models
         [Required]
 
         public int deptId { get; set; }
+
+        public string UserName { get; set; }
+        public string password { get; set; }
     }
 }

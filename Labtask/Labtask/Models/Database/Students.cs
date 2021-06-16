@@ -92,6 +92,13 @@ namespace Labtask.Models.Database
             conn.Close();
         }
 
-        
+        public void Delete(string s)
+        {
+            string query = $"Delete from student Where Id = '{s}'";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Open();
+            cmd.ExecuteNonQuery();
+            conn.Close();
+        }
     }
 }

@@ -60,9 +60,21 @@ namespace Labtask.Controllers
 
         public ActionResult Delete(string Id)
         {
-            return View();
+            Database d = new Database();
+            d.Student.Delete(Id);
+            return RedirectToAction("AllStudent");
         }
 
+        public ActionResult Login()
+        {
+            Student s = new Student();
+            return View(s);
+        }
+        [HttpPost]
+        public ActionResult Login(Student s)
+        {
+            return RedirectToAction("AllStudent");
+        }
 
     }
 }
