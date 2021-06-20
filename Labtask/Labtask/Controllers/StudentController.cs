@@ -66,14 +66,23 @@ namespace Labtask.Controllers
         }
 
         public ActionResult Login()
-        {
-            Student s = new Student();
-            return View(s);
-        }
+         {
+             Student s = new Student();
+             return View(s);
+         } 
         [HttpPost]
         public ActionResult Login(Student s)
         {
-            return RedirectToAction("AllStudent");
+            Database d = new Database();
+            var a= d.Student.LogIn(s.UserName);
+            if (a.UserName==s.UserName && a.password==s.password)
+            {
+                return RedirectToAction("AllStudent");
+            }
+            else
+                return RedirectToAction("Create");
+
+
         }
 
     }

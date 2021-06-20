@@ -151,8 +151,8 @@ C:\Users\ASUS\Desktop\ATP2 LabTask\Labtask\Labtask\bin\System.Web.WebPages.Razor
 C:\Users\ASUS\Desktop\ATP2 LabTask\Labtask\Labtask\bin\Newtonsoft.Json.xml
 C:\Users\ASUS\Desktop\ATP2 LabTask\Labtask\Labtask\bin\Antlr3.Runtime.pdb
 C:\Users\ASUS\Desktop\ATP2 LabTask\Labtask\Labtask\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\ASUS\Desktop\ATP2 LabTask\Labtask\Labtask\obj\Debug\Labtask.csprojAssemblyReference.cache
 C:\Users\ASUS\Desktop\ATP2 LabTask\Labtask\Labtask\obj\Debug\Labtask.csproj.CoreCompileInputs.cache
 C:\Users\ASUS\Desktop\ATP2 LabTask\Labtask\Labtask\obj\Debug\Labtask.csproj.CopyComplete
 C:\Users\ASUS\Desktop\ATP2 LabTask\Labtask\Labtask\obj\Debug\Labtask.dll
 C:\Users\ASUS\Desktop\ATP2 LabTask\Labtask\Labtask\obj\Debug\Labtask.pdb
+C:\Users\ASUS\Desktop\ATP2 LabTask\Labtask\Labtask\obj\Debug\Labtask.csproj.AssemblyReference.cache

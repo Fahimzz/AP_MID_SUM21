@@ -100,5 +100,33 @@ namespace Labtask.Models.Database
             cmd.ExecuteNonQuery();
             conn.Close();
         }
+
+        public Student LogIn(string s)
+        {
+
+            Student a = null;
+            string query = $"select * from Admin where UserName= '{s}'";
+            SqlCommand cmd = new SqlCommand(query, conn);
+            conn.Open();
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                a = new Student()
+                {
+                    UserName = reader.GetString(reader.GetOrdinal("UserName")),
+                    password = reader.GetString(reader.GetOrdinal("password")),
+                    
+
+                };
+
+
+
+
+            }
+            conn.Close();
+            return a;
+
+
+        }
     }
 }
